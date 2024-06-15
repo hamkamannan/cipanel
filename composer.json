@@ -1,13 +1,55 @@
 {
     "name": "hamkamannan/cipanel",
     "description": "CiPanel - Advanced Modular Admin Panel + CRUD & API Builder",
-    "version": "1.0.0",
+    "keywords": [
+		"codeigniter",
+		"authentication",
+		"authorization",
+        "hmvc",
+		"adminpanel",
+"crud","builder"
+	],
+    "type": "library",
     "license": "MIT",
     "authors": [
         {
             "name": "Hamka Mannan",
-            "email": "hamka[at]mannan[dot]id"
+            "email": "hamka@mannan.id"
         }
     ],
-    "minimum-stability": "dev"
+    "require": {
+    "php": "^7.3",
+    "codeigniter4/framework": "^4.4.8",
+    "phpoffice/phpspreadsheet": "^1.29",
+    "hybridauth/hybridauth": "^3.11",
+    "google/apiclient": "^2.14",
+    "firebase/php-jwt": "^5.4",
+    "twilio/sdk": "^6.44",
+    "aws/aws-sdk-php": "^3.306",
+    "spatie/db-dumper": "^2.21",
+    "pusher/pusher-php-server": "^7.2"
+  },
+  "require-dev": {
+    "fakerphp/faker": "^1.9",
+    "mikey179/vfsstream": "^1.6",
+    "phpunit/phpunit": "^9.1"
+  },
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "autoload": {
+        "psr-4": {
+            "hamkamannan\\cipanel\\": "src"
+        }
+    },
+    "autoload-dev": {
+		"psr-4": {
+			"Tests\\Support\\": "tests/_support"
+		}
+	},
+    "scripts": {
+		"test": "phpunit"
+	},
+	"suggest": {
+		"ext-fileinfo": "Improves mime type detection for files"
+	}
 }

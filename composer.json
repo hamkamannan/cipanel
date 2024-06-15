@@ -1,0 +1,13 @@
+{
+    "name": "hamkamannan/cipanel",
+    "description": "CiPanel - Advanced Modular Admin Panel + CRUD & API Builder",
+    "version": "1.0.0",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Hamka Mannan",
+            "email": "hamka@mannan.id"
+        }
+    ],
+    "minimum-stability": "dev"
+}
